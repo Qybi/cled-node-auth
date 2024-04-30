@@ -1,0 +1,23 @@
+body {
+    background-color: lightgreen;
+    color: rebeccapurple;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    font-weight: bold;
+    color: chocolate;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
