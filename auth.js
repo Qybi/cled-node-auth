@@ -2,6 +2,8 @@
 
 
 export default async function AuthRoutes(app) {
+    // l'hook viene eseguito prima di ogni richiesta, in questo caso fa il redirect 
+    // alla pagina di login se l'utente non è loggato
     await app.addHook('onRequest', async (req, res) => {
         if(!req.session.get('user')) {
             res.redirect('/login');
